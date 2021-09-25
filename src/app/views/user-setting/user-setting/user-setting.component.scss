@@ -1,0 +1,21 @@
+.content-wrapper {
+    padding: 5px 15px 0 15px;
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    button.add-task {
+        position: relative;
+        top: -8px;
+    }
+    .save-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        button {
+            min-width: 200px;
+        }
+    }
+    
+}

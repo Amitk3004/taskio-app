@@ -1,3 +1,11 @@
-<p>
-  user-task works!
-</p>
+<ng-container *ngIf="taskList.length else emptyMessage">
+  <mat-selection-list #shoes>
+    <mat-list-option *ngFor="let task of taskList">
+      {{task}}
+    </mat-list-option>
+  </mat-selection-list>
+</ng-container>
+
+<ng-template #emptyMessage>
+  <h3>Please create Task List in Settings!</h3>
+</ng-template>
